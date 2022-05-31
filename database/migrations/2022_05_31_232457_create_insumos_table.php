@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('fornecedor')->nullable();
-            $table->string('quantidade');
-            $table->string('peso');
+            $table->integer('quantidade');
+            $table->float('peso');
             $table->string('valor')->nullable();
         });
     }
