@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/lista', [ListaController::class, 'index']);
-Route::post('/cadastra', [CadastraController::class, 'store']);
+Route::get('/item', [ListaController::class, 'index']);
+Route::post('/item', [CadastraController::class, 'store']);
