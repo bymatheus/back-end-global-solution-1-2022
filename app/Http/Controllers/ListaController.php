@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Insumo;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class ListaController extends Controller
 {
     public function index(): JsonResponse
     {
-        return response()->json([
-            200
-        ]);
+        return response()->json(
+            Insumo::all()
+        );
     }
 }
